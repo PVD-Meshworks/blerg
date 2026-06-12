@@ -5,6 +5,9 @@ export default ({ title, children }: Lume.Data) => (
       <head>
         <title>{title}</title>
         <link rel="stylesheet" href="/styles/reset.css" />
+        <link rel="stylesheet" href="/styles/fonts.css" />
+        <link rel="stylesheet" href="/styles/colors.css" />
+        <link rel="stylesheet" href="/styles/base.css" />
       </head>
       <body>
         {children}

@@ -1,0 +1,11 @@
+:root {
+  --color-night: hsl(210, 69%, 76%);
+  --color-sky: hsl(204, 63%, 80%);
+  --color-teal: hsl(173, 56%, 83%);
+  --color-marine: hsl(154, 58%, 74%);
+  --color-yellow: hsl(33, 100%, 93%);
+  --color-coral: hsl(359, 83%, 79%);
+  
+  --color-dark: hsl(210, 16%, 10%);
+  --color-light: hsl(206, 47%, 93%);
+}
