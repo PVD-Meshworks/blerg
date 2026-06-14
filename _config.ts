@@ -4,6 +4,10 @@ import googleFonts from "lume/plugins/google_fonts.ts";
 
 const site = lume({
   src: "./src",
+  /*components: {
+    cssFile: "/style.css",
+    jsFile: "/script.js",
+  }*/
 });
 
 site.use(jsx());
