@@ -1,0 +1,19 @@
+// @ts-check
+// @ts-ignore
+import { defineConfig, fontProviders } from "astro/config";
+
+// https://astro.build/config
+export default defineConfig({
+  fonts: [
+    {
+      provider: fontProviders.google(),
+      name: "Raleway",
+      cssVariable: "--font-main",
+    },
+    {
+      provider: fontProviders.google(),
+      name: "Sour Gummy",
+      cssVariable: "--font-accent",
+    },
+  ],
+});
