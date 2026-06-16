@@ -2105,10 +2105,8 @@
     }
   },
   "workspace": {
-    "packageJson": {
-      "dependencies": [
-        "npm:astro@^6.4.6"
-      ]
-    }
+    "dependencies": [
+      "npm:astro@^6.4.6"
+    ]
   }
 }
