@@ -1,0 +1,13 @@
+{
+  "tasks": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "imports": {
+    "astro": "npm:astro@^6.4.6"
+  },
+  "nodeModulesDir": "auto",
+  "allowScripts": ["npm:esbuild@0.27.7", "npm:fsevents@2.3.3", "npm:sharp@0.34.5"]
+}
