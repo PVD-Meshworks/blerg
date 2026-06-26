@@ -37,7 +37,7 @@ static websites for two reasons:
    mostly future proof. HTML and CSS aren't going away any time soon.
 
 Given that, we had a few options. We initially started trying to use
-[Hono](https://hono.dev/), but we found the API a little un-ergonomic, and
+[Lume](https://lume.land/), but we found the API a little un-ergonomic, and
 quickly switched to [Astro](https://astro.build). Astro is almost built to
 handle this use-case (the super light weight blog), and the API is really
 intuitive. So it was kind of a natural fit once we decided to use it. We started
