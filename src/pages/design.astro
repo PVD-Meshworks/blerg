@@ -1,6 +1,8 @@
 ---
 import Base from "@/layouts/Base.astro";
+import Swatch from "@/components/Swatch/Swatch.astro";
 ---
+
 <style>
   .swatches__wrapper {
     display: flex;
@@ -33,10 +35,7 @@ import Base from "@/layouts/Base.astro";
   <div class=".swatches__wrapper">
     <h3 class=".swatches__title">Background</h3>
     <div class=".swatches__container">
-      <div class=".swatch__card">
-        <h5 class=".swatch__title">hsl(11, 1, 1)</h5>
-        <div class=".swatch__color"></div>
-      </div>
+      <Swatch title="testing" color="var(--pink-7)" />
     </div>
   </div>
 </Base>
