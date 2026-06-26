@@ -1,0 +1,43 @@
+---
+import Base from '@/layouts/Base.astro';
+---
+<style>
+.swatches__wrapper {
+  display: flex;
+}
+
+.swatches__container {
+  display: flex;
+}
+
+.swatch__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.swatch__color {
+  aspect-ratio: 1/1;
+  width: 250px;
+  color: white;
+}
+</style>
+
+<Base>
+  <h1>PVD Meshworks</h1>
+  <h2>PVD Meshworks</h2>
+  <h3>PVD Meshworks</h3>
+  <h4>PVD Meshworks</h4>
+  <h5>PVD Meshworks</h5>
+  <p>PVD Meshworks</p>
+
+  <div class=".swatches__wrapper">
+    <h3 class=".swatches__title">Background</h3>
+    <div class=".swatches__container">
+      <div class=".swatch__card">
+        <h5 class=".swatch__title">hsl(11, 1, 1)</h5>
+        <div class=".swatch__color"></div>
+      </div>
+    </div>
+
+  </div>
+</Base>
