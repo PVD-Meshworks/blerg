@@ -1,9 +1,9 @@
-import { defineCollection } from 'astro:content';
-import { z } from 'astro/zod';
-import { glob } from 'astro/loaders';
+import { defineCollection } from "astro:content";
+import { z } from "astro/zod";
+import { glob } from "astro/loaders";
 
 const blerg = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/blerg' }),
+  loader: glob({ pattern: "**/*.md", base: "./src/blerg" }),
   schema: z.object({
     title: z.string(),
     slug: z.string(),
@@ -12,12 +12,12 @@ const blerg = defineCollection({
     tags: z.array(z.string()),
     author: z.string(),
     image: z.object({
-        src: z.string(),
-        alt: z.string(),
+      src: z.string(),
+      alt: z.string(),
     }),
   }),
 });
 
 export const collections = {
-  blerg 
+  blerg,
 };
