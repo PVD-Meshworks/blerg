@@ -5,7 +5,6 @@ import Base from '@/layouts/Base.astro';
 
 const blergPosts = await getCollection("blerg");
 const postTitles = blergPosts.map((post) => ({ title: post.data.title, slug: post.data.slug }));
-
 ---
 <Base>
     <h2>BLerg Posts</h2>
