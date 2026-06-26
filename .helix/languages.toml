@@ -1,0 +1,66 @@
+[[language]]
+name = "typescript"
+auto-format = true
+language-servers = ["deno-lsp"]
+formatter = { command = "deno", args = ["fmt", "-", "--ext", "ts"] }
+
+[[language]]
+name = "javascript"
+auto-format = true
+language-servers = ["deno-lsp"]
+formatter = { command = "deno", args = ["fmt", "-", "--ext", "js"] }
+
+[[language]]
+name = "tsx"
+auto-format = true
+language-servers = ["deno-lsp"]
+formatter = { command = "deno", args = ["fmt", "-", "--ext", "tsx"] }
+
+[[language]]
+name = "jsx"
+auto-format = true
+language-servers = ["deno-lsp"]
+formatter = { command = "deno", args = ["fmt", "-", "--ext", "jsx"] }
+
+[[language]]
+name = "json"
+auto-format = true
+formatter = { command = "deno", args = ["fmt", "-", "--ext", "json"] }
+
+[[language]]
+name = "markdown"
+auto-format = true
+formatter = { command = "deno", args = ["fmt", "-", "--ext", "md"] }
+
+[[language]]
+name = "css"
+auto-format = true
+formatter = { command = "deno", args = ["fmt", "-", "--ext", "css"] }
+
+[[language]]
+name = "html"
+auto-format = true
+formatter = { command = "deno", args = ["fmt", "-", "--ext", "html"] }
+
+[[language]]
+name = "yaml"
+auto-format = true
+formatter = { command = "deno", args = ["fmt", "-", "--ext", "yml"] }
+
+[[language]]
+name = "sql"
+auto-format = true
+formatter = { command = "deno", args = ["fmt", "-", "--ext", "sql"] }
+
+[language-server.astro-ls]
+command = "astro-ls"
+args = ["--stdio"]
+config = { typescript = { tsdk = "node_modules/typescript/lib" }, environment = "node" }
+
+[[language]]
+name = "astro"
+scope = "source.astro"
+injection-regex = "astro"
+file-types = ["astro"]
+roots = ["deno.json", "astro.config.mjs"]
+language-servers = [ "astro-ls" ]

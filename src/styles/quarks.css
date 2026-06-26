@@ -1,14 +1,10 @@
 :root {
+  /* Pastels */
 
-    /* Pastels */
-
-    --q-blue: #99C3EC;
-    --q-periwinkle: #AAD2EC;
-    --q-teal: #BCEDE6;
-    --q-pine: #97E3C2;
-    --q-peach: #FFEED9;
-    --q-pink: #F69C9E;
-
-    /*  */
-
+  --q-blue: #99c3ec;
+  --q-periwinkle: #aad2ec;
+  --q-teal: #bcede6;
+  --q-pine: #97e3c2;
+  --q-peach: #ffeed9;
+  --q-pink: #f69c9e;
 }
