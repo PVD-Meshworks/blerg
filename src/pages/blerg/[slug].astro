@@ -1,0 +1,21 @@
+---
+import type { GetStaticPaths } from "astro";
+import { render, getCollection } from "astro:content";
+
+import Base from '@/layouts/Base.astro';
+
+export const getStaticPaths = (async () => {
+  const blergPosts = await getCollection("blerg");
+  return blergPosts.map((post) => ({
+    params: { slug: post.data.slug },
+    props: { post }
+  }));
+}) satisfies GetStaticPaths;
+
+const { post } = Astro.props;
+
+const { Content } = await render(post);
+---
+<Base>
+  <Content />
+</Base>

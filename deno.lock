@@ -1,7 +1,6 @@
 {
   "version": "5",
   "specifiers": {
-    "npm:@astrojs/language-server@^2.16.10": "2.16.10_typescript@6.0.3",
     "npm:astro@7": "7.0.3_@emnapi+core@1.11.1_@emnapi+runtime@1.11.1",
     "npm:open-props@^1.7.23": "1.7.23",
     "npm:typescript@^6.0.3": "6.0.3"
@@ -74,9 +73,6 @@
         "@astrojs/compiler-binding"
       ]
     },
-    "@astrojs/compiler@2.13.1": {
-      "integrity": "sha512-f3FN83d2G/v32ipNClRKgYv30onQlMZX1vCeZMjPsMMPl1mDpmbl0+N5BYo4S/ofzqJyS5hvwacEo0CCVDn/Qg=="
-    },
     "@astrojs/internal-helpers@0.10.0": {
       "integrity": "sha512-Ry2R3VPeIN4uPCSA4xQc+e+vsJXkalKpEbDc07hV+a/o5Bs2N/s/uDcPJH/05L19DKh9tAy7e6JM3YZ6Cxfezw==",
       "dependencies": [
@@ -89,30 +85,6 @@
         "smol-toml",
         "unified"
       ]
-    },
-    "@astrojs/language-server@2.16.10_typescript@6.0.3": {
-      "integrity": "sha512-87VQ/5GSdHlRnUA+hGuerYyIGAj+9RbZmATyuKLEUePinUXhQ5YkRnRrHhOD9sSi5JOErLjrLkHnfZFEvGrV8w==",
-      "dependencies": [
-        "@astrojs/compiler",
-        "@astrojs/yaml2ts",
-        "@jridgewell/sourcemap-codec",
-        "@volar/kit",
-        "@volar/language-core",
-        "@volar/language-server",
-        "@volar/language-service",
-        "muggle-string",
-        "tinyglobby",
-        "volar-service-css",
-        "volar-service-emmet",
-        "volar-service-html",
-        "volar-service-prettier",
-        "volar-service-typescript",
-        "volar-service-typescript-twoslash-queries",
-        "volar-service-yaml",
-        "vscode-html-languageservice",
-        "vscode-uri"
-      ],
-      "bin": true
     },
     "@astrojs/markdown-satteri@0.3.2": {
       "integrity": "sha512-feXuUPy41gVfeM7EHT1ciUim8ozGr+YHXab9uUBc1Hk8y60DQosO8ldL+AoPXnCAoGj1OChwHfvXmmJ6XVnY9A==",
@@ -137,12 +109,6 @@
         "is-docker@4.0.0",
         "is-wsl",
         "which-pm-runs"
-      ]
-    },
-    "@astrojs/yaml2ts@0.2.4": {
-      "integrity": "sha512-8oddpOae35pJsXPQXhTkM0ypfKPskVsh2bCxRtbf7e+/Epw2nReakFYpLKjZMEr75CsoF203PMnCocpfz0s69A==",
-      "dependencies": [
-        "yaml@2.9.0"
       ]
     },
     "@babel/helper-string-parser@7.29.7": {
@@ -235,40 +201,6 @@
         "fast-wrap-ansi",
         "sisteransi"
       ]
-    },
-    "@emmetio/abbreviation@2.3.3": {
-      "integrity": "sha512-mgv58UrU3rh4YgbE/TzgLQwJ3pFsHHhCLqY20aJq+9comytTXUDNGG/SMtSeMJdkpxgXSXunBGLD8Boka3JyVA==",
-      "dependencies": [
-        "@emmetio/scanner"
-      ]
-    },
-    "@emmetio/css-abbreviation@2.1.8": {
-      "integrity": "sha512-s9yjhJ6saOO/uk1V74eifykk2CBYi01STTK3WlXWGOepyKa23ymJ053+DNQjpFcy1ingpaO7AxCcwLvHFY9tuw==",
-      "dependencies": [
-        "@emmetio/scanner"
-      ]
-    },
-    "@emmetio/css-parser@0.4.1": {
-      "integrity": "sha512-2bC6m0MV/voF4CTZiAbG5MWKbq5EBmDPKu9Sb7s7nVcEzNQlrZP6mFFFlIaISM8X6514H9shWMme1fCm8cWAfQ==",
-      "dependencies": [
-        "@emmetio/stream-reader",
-        "@emmetio/stream-reader-utils"
-      ]
-    },
-    "@emmetio/html-matcher@1.3.0": {
-      "integrity": "sha512-NTbsvppE5eVyBMuyGfVu2CRrLvo7J4YHb6t9sBFLyY03WYhXET37qA4zOYUjBWFCRHO7pS1B9khERtY0f5JXPQ==",
-      "dependencies": [
-        "@emmetio/scanner"
-      ]
-    },
-    "@emmetio/scanner@1.0.4": {
-      "integrity": "sha512-IqRuJtQff7YHHBk4G8YZ45uB9BaAGcwQeVzgj/zj8/UdOhtQpEIupUhSk8dys6spFIWVZVeK20CzGEnqR5SbqA=="
-    },
-    "@emmetio/stream-reader-utils@0.1.0": {
-      "integrity": "sha512-ZsZ2I9Vzso3Ho/pjZFsmmZ++FWeEd/txqybHTm4OgaZzdS8V9V/YYWQwg5TC38Z7uLWUV1vavpLLbjJtKubR1A=="
-    },
-    "@emmetio/stream-reader@2.2.0": {
-      "integrity": "sha512-fXVXEyFA5Yv3M3n8sUGT7+fvecGrZP4k6FnWWMSZVQf69kAq0LLpaBQLGcPR30m3zMmKYhECP4k/ZkzvhEW5kw=="
     },
     "@emnapi/core@1.11.1": {
       "integrity": "sha512-RSvbQmHzdKzNsLYa/wHrbc3KN4sYLKAdPZxqiM2HATqv/SBk2/ENSHpvXGaLOMcsAyz0poEGqkmmKYG3OWiJEQ==",
@@ -775,88 +707,6 @@
     "@ungap/structured-clone@1.3.2": {
       "integrity": "sha512-5jsZFwgR5rTdKwidH9Qmat75RKwqfpKlWWB1frDkljN127mwqBu8K0PYo7/hFpF03IEJpfVPpCQDY/eDx3iHvA=="
     },
-    "@volar/kit@2.4.28_typescript@6.0.3": {
-      "integrity": "sha512-cKX4vK9dtZvDRaAzeoUdaAJEew6IdxHNCRrdp5Kvcl6zZOqb6jTOfk3kXkIkG3T7oTFXguEMt5+9ptyqYR84Pg==",
-      "dependencies": [
-        "@volar/language-service",
-        "@volar/typescript",
-        "typesafe-path",
-        "typescript",
-        "vscode-languageserver-textdocument",
-        "vscode-uri"
-      ]
-    },
-    "@volar/language-core@2.4.28": {
-      "integrity": "sha512-w4qhIJ8ZSitgLAkVay6AbcnC7gP3glYM3fYwKV3srj8m494E3xtrCv6E+bWviiK/8hs6e6t1ij1s2Endql7vzQ==",
-      "dependencies": [
-        "@volar/source-map"
-      ]
-    },
-    "@volar/language-server@2.4.28": {
-      "integrity": "sha512-NqcLnE5gERKuS4PUFwlhMxf6vqYo7hXtbMFbViXcbVkbZ905AIVWhnSo0ZNBC2V127H1/2zP7RvVOVnyITFfBw==",
-      "dependencies": [
-        "@volar/language-core",
-        "@volar/language-service",
-        "@volar/typescript",
-        "path-browserify",
-        "request-light@0.7.0",
-        "vscode-languageserver",
-        "vscode-languageserver-protocol",
-        "vscode-languageserver-textdocument",
-        "vscode-uri"
-      ]
-    },
-    "@volar/language-service@2.4.28": {
-      "integrity": "sha512-Rh/wYCZJrI5vCwMk9xyw/Z+MsWxlJY1rmMZPsxUoJKfzIRjS/NF1NmnuEcrMbEVGja00aVpCsInJfixQTMdvLw==",
-      "dependencies": [
-        "@volar/language-core",
-        "vscode-languageserver-protocol",
-        "vscode-languageserver-textdocument",
-        "vscode-uri"
-      ]
-    },
-    "@volar/source-map@2.4.28": {
-      "integrity": "sha512-yX2BDBqJkRXfKw8my8VarTyjv48QwxdJtvRgUpNE5erCsgEUdI2DsLbpa+rOQVAJYshY99szEcRDmyHbF10ggQ=="
-    },
-    "@volar/typescript@2.4.28": {
-      "integrity": "sha512-Ja6yvWrbis2QtN4ClAKreeUZPVYMARDYZl9LMEv1iQ1QdepB6wn0jTRxA9MftYmYa4DQ4k/DaSZpFPUfxl8giw==",
-      "dependencies": [
-        "@volar/language-core",
-        "path-browserify",
-        "vscode-uri"
-      ]
-    },
-    "@vscode/emmet-helper@2.11.0": {
-      "integrity": "sha512-QLxjQR3imPZPQltfbWRnHU6JecWTF1QSWhx3GAKQpslx7y3Dp6sIIXhKjiUJ/BR9FX8PVthjr9PD6pNwOJfAzw==",
-      "dependencies": [
-        "emmet",
-        "jsonc-parser@2.3.1",
-        "vscode-languageserver-textdocument",
-        "vscode-languageserver-types@3.18.0",
-        "vscode-uri"
-      ]
-    },
-    "@vscode/l10n@0.0.18": {
-      "integrity": "sha512-KYSIHVmslkaCDyw013pphY+d7x1qV8IZupYfeIfzNA+nsaWHbn5uPuQRvdRFsa9zFzGeudPuoGoZ1Op4jrJXIQ=="
-    },
-    "ajv-draft-04@1.0.0_ajv@8.20.0": {
-      "integrity": "sha512-mv00Te6nmYbRp5DCwclxtt7yV/joXJPGS7nM+97GdxvuttCOfgI3K4U25zboyeX0O+myI8ERluxQe5wljMmVIw==",
-      "dependencies": [
-        "ajv"
-      ],
-      "optionalPeers": [
-        "ajv"
-      ]
-    },
-    "ajv@8.20.0": {
-      "integrity": "sha512-Thbli+OlOj+iMPYFBVBfJ3OmCAnaSyNn4M1vz9T6Gka5Jt9ba/HIR56joy65tY6kx/FCF5VXNB819Y7/GUrBGA==",
-      "dependencies": [
-        "fast-deep-equal",
-        "fast-uri",
-        "json-schema-traverse",
-        "require-from-string"
-      ]
-    },
     "am-i-vibing@0.4.0": {
       "integrity": "sha512-MxT4XZL7pzLHpuvhDKdMaQHMGGkJDLluKBLsbstn+8wv9sWcFT6h+0ve9qkml95amVTZtZV83gQe2hY+ojgHLg==",
       "dependencies": [
@@ -907,7 +757,7 @@
         "html-escaper",
         "http-cache-semantics",
         "js-yaml",
-        "jsonc-parser@3.3.1",
+        "jsonc-parser",
         "magic-string",
         "magicast",
         "mrmime",
@@ -1078,13 +928,6 @@
     "dset@3.1.4": {
       "integrity": "sha512-2QF/g9/zTaPDc3BjNcVTGoBbXBgYfMTTceLaYcFJ/W9kggFUkhxD/hMEeuLKbugyef9SqAx8cpgwlIP/jinUTA=="
     },
-    "emmet@2.4.11": {
-      "integrity": "sha512-23QPJB3moh/U9sT4rQzGgeyyGIrcM+GH5uVYg2C6wZIxAIJq7Ng3QLT79tl8FUwDXhyq9SusfknOrofAKqvgyQ==",
-      "dependencies": [
-        "@emmetio/abbreviation",
-        "@emmetio/css-abbreviation"
-      ]
-    },
     "entities@4.5.0": {
       "integrity": "sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw=="
     },
@@ -1136,9 +979,6 @@
     "extend@3.0.2": {
       "integrity": "sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g=="
     },
-    "fast-deep-equal@3.1.3": {
-      "integrity": "sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q=="
-    },
     "fast-string-truncated-width@3.0.3": {
       "integrity": "sha512-0jjjIEL6+0jag3l2XWWizO64/aZVtpiGE3t0Zgqxv0DPuxiMjvB3M24fCyhZUO4KomJQPj3LTSUnDP3GpdwC0g=="
     },
@@ -1147,9 +987,6 @@
       "dependencies": [
         "fast-string-truncated-width"
       ]
-    },
-    "fast-uri@3.1.2": {
-      "integrity": "sha512-rVjf7ArG3LTk+FS6Yw81V1DLuZl1bRbNrev6Tmd/9RaroeeRRJhAt7jg/6YFxbvAQXUCavSoZhPPj6oOx+5KjQ=="
     },
     "fast-wrap-ansi@0.2.2": {
       "integrity": "sha512-7F2Fl+TjRSenLqlU3UjSH0iyqopqoZIu7eZVpEirP2g1GtWa2G/ecEmBdgz31+Mxr+ELclgg6sokpSFIQiZ02Q==",
@@ -1314,12 +1151,6 @@
       ],
       "bin": true
     },
-    "json-schema-traverse@1.0.0": {
-      "integrity": "sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug=="
-    },
-    "jsonc-parser@2.3.1": {
-      "integrity": "sha512-H8jvkz1O50L3dMZCsLqiuB2tA7muqbSg1AtGEkN0leAqGjsUzDJir3Zwr02BhqdcITPg3ei3mZ+HjMocAknhhg=="
-    },
     "jsonc-parser@3.3.1": {
       "integrity": "sha512-HUgH65KyejrUFPvHFPbqOY0rsFip3Bo5wb4ngvdi1EpCYWUQDC5V+Y7mZws+DLkr4M//zQJoanu1SP+87Dv1oQ=="
     },
@@ -1461,9 +1292,6 @@
     "mrmime@2.0.1": {
       "integrity": "sha512-Y3wQdFg2Va6etvQ5I82yUhGdsKrcYox6p7FfL1LbK2J4V01F9TGlepTIhnK24t7koZibmg82KGglhA1XK5IsLQ=="
     },
-    "muggle-string@0.4.1": {
-      "integrity": "sha512-VNTrAak/KhO2i8dqqnqnAHOa3cYBwXEZe9h+D5h/1ZqFSTEFHdM65lR7RoIqq3tBBYavsOXV84NoHXZ0AkPyqQ=="
-    },
     "nanoid@3.3.15": {
       "integrity": "sha512-y7Wygv/7mEOvxTuEQDB8StXdMRBWf1kR/tlhAzBRUFkB2jfcLOAxO/SHmOO2zgz1pVgK29/kyupn059/bCHdjA==",
       "bin": true
@@ -1545,9 +1373,6 @@
         "entities@6.0.1"
       ]
     },
-    "path-browserify@1.0.1": {
-      "integrity": "sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g=="
-    },
     "piccolore@0.1.3": {
       "integrity": "sha512-o8bTeDWjE086iwKrROaDf31K0qC/BENdm15/uH9usSC/uZjJOKb2YGiVHfLY4GhwsERiPI1jmwI2XrA7ACOxVw=="
     },
@@ -1567,10 +1392,6 @@
         "picocolors",
         "source-map-js"
       ]
-    },
-    "prettier@3.8.4": {
-      "integrity": "sha512-N2MylSdi48+5N/6S5j+maeHbUSIzzZ5uOcX5Hm4QpV8Dkb1HFjfAKTKX6yNPJQD9AhcT3ifHNB66tWTTJDi11Q==",
-      "bin": true
     },
     "prismjs@1.30.0": {
       "integrity": "sha512-DEvV2ZF2r2/63V+tK8hQvrR2ZGn10srHbXviTlcv7Kpzw8jWiNTqbVgjO3IY8RxrrOUF8VPMQQFysYYYv0YZxw=="
@@ -1626,15 +1447,6 @@
         "rehype-stringify",
         "unified"
       ]
-    },
-    "request-light@0.5.8": {
-      "integrity": "sha512-3Zjgh+8b5fhRJBQZoy+zbVKpAQGLyka0MPgW3zruTF4dFFJ8Fqcfu9YsAvi/rvdcaTeWG3MkbZv4WKxAn/84Lg=="
-    },
-    "request-light@0.7.0": {
-      "integrity": "sha512-lMbBMrDoxgsyO+yB3sDcrDuX85yYt7sS8BfQd11jtbW/z5ZWgLZRcEGLsLoYw7I0WSUGQBs8CC8ScIxkTX1+6Q=="
-    },
-    "require-from-string@2.0.2": {
-      "integrity": "sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw=="
     },
     "resolve-pkg-maps@1.0.0": {
       "integrity": "sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw=="
@@ -1804,15 +1616,6 @@
     "tslib@2.8.1": {
       "integrity": "sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w=="
     },
-    "typesafe-path@0.2.2": {
-      "integrity": "sha512-OJabfkAg1WLZSqJAJ0Z6Sdt3utnbzr/jh+NAHoyWHJe8CMSy79Gm085094M9nvTPy22KzTVn5Zq5mbapCI/hPA=="
-    },
-    "typescript-auto-import-cache@0.3.6": {
-      "integrity": "sha512-RpuHXrknHdVdK7wv/8ug3Fr0WNsNi5l5aB8MYYuXhq2UH5lnEB1htJ1smhtD5VeCsGr2p8mUDtd83LCQDFVgjQ==",
-      "dependencies": [
-        "semver"
-      ]
-    },
     "typescript@6.0.3": {
       "integrity": "sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==",
       "bin": true
@@ -1940,149 +1743,6 @@
         "vite"
       ]
     },
-    "volar-service-css@0.0.70_@volar+language-service@2.4.28": {
-      "integrity": "sha512-K1qyOvBpE3rzdAv3e4/6Rv5yizrYPy5R/ne3IWCAzLBuMO4qBMV3kSqWzj6KUVe6S0AnN6wxF7cRkiaKfYMYJw==",
-      "dependencies": [
-        "@volar/language-service",
-        "vscode-css-languageservice",
-        "vscode-languageserver-textdocument",
-        "vscode-uri"
-      ],
-      "optionalPeers": [
-        "@volar/language-service"
-      ]
-    },
-    "volar-service-emmet@0.0.70_@volar+language-service@2.4.28": {
-      "integrity": "sha512-xi5bC4m/VyE3zy/n2CXspKeDZs3qA41tHLTw275/7dNWM/RqE2z3BnDICQybHIVp/6G1iOQj5c1qXMgQC08TNg==",
-      "dependencies": [
-        "@emmetio/css-parser",
-        "@emmetio/html-matcher",
-        "@volar/language-service",
-        "@vscode/emmet-helper",
-        "vscode-uri"
-      ],
-      "optionalPeers": [
-        "@volar/language-service"
-      ]
-    },
-    "volar-service-html@0.0.70_@volar+language-service@2.4.28": {
-      "integrity": "sha512-eR6vCgMdmYAo4n+gcT7DSyBQbwB8S3HZZvSagTf0sxNaD4WppMCFfpqWnkrlGStPKMZvMiejRRVmqsX9dYcTvQ==",
-      "dependencies": [
-        "@volar/language-service",
-        "vscode-html-languageservice",
-        "vscode-languageserver-textdocument",
-        "vscode-uri"
-      ],
-      "optionalPeers": [
-        "@volar/language-service"
-      ]
-    },
-    "volar-service-prettier@0.0.70_@volar+language-service@2.4.28": {
-      "integrity": "sha512-Z6BCFSpGVCd8BPAsZ785Kce1BGlWd5ODqmqZGVuB14MJvrR4+CYz6cDy4F+igmE1gMifqfvMhdgT8Aud4M5ngg==",
-      "dependencies": [
-        "@volar/language-service",
-        "vscode-uri"
-      ],
-      "optionalPeers": [
-        "@volar/language-service"
-      ]
-    },
-    "volar-service-typescript-twoslash-queries@0.0.70_@volar+language-service@2.4.28": {
-      "integrity": "sha512-IdD13Z9N2Bu8EM6CM0fDV1E69olEYGHDU25X51YXmq8Y0CmJ2LNj6gOiBJgpS5JGUqFzECVhMNBW7R0sPdRTMQ==",
-      "dependencies": [
-        "@volar/language-service",
-        "vscode-uri"
-      ],
-      "optionalPeers": [
-        "@volar/language-service"
-      ]
-    },
-    "volar-service-typescript@0.0.70_@volar+language-service@2.4.28": {
-      "integrity": "sha512-l46Bx4cokkUedTd74ojO5H/zqHZJ8SUuyZ0IB8JN4jfRqUM3bQFBHoOwlZCyZmOeO0A3RQNkMnFclxO4c++gsg==",
-      "dependencies": [
-        "@volar/language-service",
-        "path-browserify",
-        "semver",
-        "typescript-auto-import-cache",
-        "vscode-languageserver-textdocument",
-        "vscode-nls",
-        "vscode-uri"
-      ],
-      "optionalPeers": [
-        "@volar/language-service"
-      ]
-    },
-    "volar-service-yaml@0.0.70_@volar+language-service@2.4.28": {
-      "integrity": "sha512-0c8bXDBeoATF9F6iPIlOuYTuZAC4c+yi0siQo920u7eiBJk8oQmUmg9cDUbR4+Gl++bvGP4plj3fErbJuPqdcQ==",
-      "dependencies": [
-        "@volar/language-service",
-        "vscode-uri",
-        "yaml-language-server"
-      ],
-      "optionalPeers": [
-        "@volar/language-service"
-      ]
-    },
-    "vscode-css-languageservice@6.3.10": {
-      "integrity": "sha512-eq5N9Er3fC4vA9zd9EFhyBG90wtCCuXgRSpAndaOgXMh1Wgep5lBgRIeDgjZBW9pa+332yC9+49cZMW8jcL3MA==",
-      "dependencies": [
-        "@vscode/l10n",
-        "vscode-languageserver-textdocument",
-        "vscode-languageserver-types@3.17.5",
-        "vscode-uri"
-      ]
-    },
-    "vscode-html-languageservice@5.6.2": {
-      "integrity": "sha512-ulCrSnFnfQ16YzvwnYUgEbUEl/ZG7u2eV27YhvLObSHKkb8fw1Z9cgsnUwjTEeDIdJDoTDTDpxuhQwoenoLNMg==",
-      "dependencies": [
-        "@vscode/l10n",
-        "vscode-languageserver-textdocument",
-        "vscode-languageserver-types@3.18.0",
-        "vscode-uri"
-      ]
-    },
-    "vscode-json-languageservice@4.1.8": {
-      "integrity": "sha512-0vSpg6Xd9hfV+eZAaYN63xVVMOTmJ4GgHxXnkLCh+9RsQBkWKIghzLhW2B9ebfG+LQQg8uLtsQ2aUKjTgE+QOg==",
-      "dependencies": [
-        "jsonc-parser@3.3.1",
-        "vscode-languageserver-textdocument",
-        "vscode-languageserver-types@3.18.0",
-        "vscode-nls",
-        "vscode-uri"
-      ]
-    },
-    "vscode-jsonrpc@8.2.0": {
-      "integrity": "sha512-C+r0eKJUIfiDIfwJhria30+TYWPtuHJXHtI7J0YlOmKAo7ogxP20T0zxB7HZQIFhIyvoBPwWskjxrvAtfjyZfA=="
-    },
-    "vscode-languageserver-protocol@3.17.5": {
-      "integrity": "sha512-mb1bvRJN8SVznADSGWM9u/b07H7Ecg0I3OgXDuLdn307rl/J3A9YD6/eYOssqhecL27hK1IPZAsaqh00i/Jljg==",
-      "dependencies": [
-        "vscode-jsonrpc",
-        "vscode-languageserver-types@3.17.5"
-      ]
-    },
-    "vscode-languageserver-textdocument@1.0.12": {
-      "integrity": "sha512-cxWNPesCnQCcMPeenjKKsOCKQZ/L6Tv19DTRIGuLWe32lyzWhihGVJ/rcckZXJxfdKCFvRLS3fpBIsV/ZGX4zA=="
-    },
-    "vscode-languageserver-types@3.17.5": {
-      "integrity": "sha512-Ld1VelNuX9pdF39h2Hgaeb5hEZM2Z3jUrrMgWQAu82jMtZp7p3vJT3BzToKtZI7NgQssZje5o0zryOrhQvzQAg=="
-    },
-    "vscode-languageserver-types@3.18.0": {
-      "integrity": "sha512-8TsGPNMIMiiBdkORgRSvLjuiEIiAFtO+KssmYWxQ+uSVvlf7RjK8YKCOjPzZ+YA04jXEV7+7LvkSmHkhpNS99g=="
-    },
-    "vscode-languageserver@9.0.1": {
-      "integrity": "sha512-woByF3PDpkHFUreUa7Hos7+pUWdeWMXRd26+ZX2A8cFx6v/JPTtd4/uN0/jB6XQHYaOlHbio03NTHCqrgG5n7g==",
-      "dependencies": [
-        "vscode-languageserver-protocol"
-      ],
-      "bin": true
-    },
-    "vscode-nls@5.2.0": {
-      "integrity": "sha512-RAaHx7B14ZU04EU31pT+rKz2/zSl7xMsfIZuo8pd+KZO6PXtQmpevpq3vxvWNcrGbdmhM/rr5Uw5Mz+NBfhVng=="
-    },
-    "vscode-uri@3.1.0": {
-      "integrity": "sha512-/BpdSx+yCQGnCvecbyXdxHDkuk55/G3xwnC0GqY4gmQ3j+A+g8kzzgB4Nk/SINjqn6+waqw3EgbVF2QKExkRxQ=="
-    },
     "web-namespaces@2.0.1": {
       "integrity": "sha512-bKr1DkiNa2krS7qxNtdrtHAmzuYGFQLiQ13TsorsdT6ULTkPLKuu5+GsFpDlg6JFjUTwX2DyhMPG2be8uPrqsQ=="
     },
@@ -2091,31 +1751,6 @@
     },
     "xxhash-wasm@1.1.0": {
       "integrity": "sha512-147y/6YNh+tlp6nd/2pWq38i9h6mz/EuQ6njIrmW8D1BS5nCqs0P6DG+m6zTGnNz5I+uhZ0SHxBs9BsPrwcKDA=="
-    },
-    "yaml-language-server@1.20.0": {
-      "integrity": "sha512-qhjK/bzSRZ6HtTvgeFvjNPJGWdZ0+x5NREV/9XZWFjIGezew2b4r5JPy66IfOhd5OA7KeFwk1JfmEbnTvev0cA==",
-      "dependencies": [
-        "@vscode/l10n",
-        "ajv",
-        "ajv-draft-04",
-        "prettier",
-        "request-light@0.5.8",
-        "vscode-json-languageservice",
-        "vscode-languageserver",
-        "vscode-languageserver-textdocument",
-        "vscode-languageserver-types@3.18.0",
-        "vscode-uri",
-        "yaml@2.7.1"
-      ],
-      "bin": true
-    },
-    "yaml@2.7.1": {
-      "integrity": "sha512-10ULxpnOCQXxJvBgxsn9ptjq6uviG/htZKk9veJGhlqn3w/DxQ631zFF+nlQXLwmImeS5amR2dl2U8sg6U9jsQ==",
-      "bin": true
-    },
-    "yaml@2.9.0": {
-      "integrity": "sha512-2AvhNX3mb8zd6Zy7INTtSpl1F15HW6Wnqj0srWlkKLcpYl/gMIMJiyuGq2KeI2YFxUPjdlB+3Lc10seMLtL4cA==",
-      "bin": true
     },
     "yargs-parser@22.0.0": {
       "integrity": "sha512-rwu/ClNdSMpkSrUb+d6BRsSkLUq1fmfsY6TOpYzTwvwkg1/NRG85KBy3kq++A8LKQwX6lsu+aWad+2khvuXrqw=="
@@ -2132,7 +1767,6 @@
   },
   "workspace": {
     "dependencies": [
-      "npm:@astrojs/language-server@^2.16.10",
       "npm:astro@7",
       "npm:open-props@^1.7.23",
       "npm:typescript@^6.0.3"
