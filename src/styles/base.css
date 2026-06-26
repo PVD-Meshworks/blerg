@@ -1,14 +1,5 @@
 html {
-	font-family: var(--font-main), sans-serif;
-  background-color: var(--color-dark);
-  color: var(--color-light);
-}
-
-p, h1, h2, h3, h4, h5, h6 {
-  font-size: 1.25rem;
-	font-weight: 400;
-}
-
-b, strong {
-  font-weight: 700;
+  background-color: var(--gray-11);
+  color: var(--blue-1);
+  font-family: var(--font-classical-humanist);
 }

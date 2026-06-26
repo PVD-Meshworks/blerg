@@ -6,7 +6,8 @@
     "astro": "astro"
   },
   "imports": {
-    "astro": "npm:astro@^7.0.0"
+    "astro": "npm:astro@^7.0.0",
+    "open-props": "npm:open-props@^1.7.23"
   },
   "nodeModulesDir": "auto",
   "allowScripts": [
