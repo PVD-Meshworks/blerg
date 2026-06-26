@@ -1,0 +1,15 @@
+@import "open-props/style";
+@import "open-props/animations";
+@import "open-props/aspects";
+@import "open-props/borders";
+@import "open-props/colors-hsl";
+@import "open-props/durations";
+@import "open-props/easings";
+@import "open-props/fonts";
+@import "open-props/gradients";
+@import "open-props/media";
+@import "open-props/normalize";
+@import "open-props/shadows";
+@import "open-props/sizes";
+@import "open-props/zindex";
+@import "open-props/brand-colors";
