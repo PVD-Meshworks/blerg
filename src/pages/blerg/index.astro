@@ -1,34 +1,20 @@
 ---
 import { getCollection } from "astro:content";
-const posts = (await getCollection("blerg")).sort(
-  (a,b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
----
 
-<!doctype html>
-<html lang="en">
-	<body>
-		<main>
-		<h1>HELLO WORLD</h1>
-			<section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/blog/${post.id}/`}>
-									{post.data.heroImage && (
-										<Image width={720} height={360} src={post.data.heroImage} alt="" />
-									)}
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-								</a>
-							</li>
-						))
-					}
-				</ul>
-			</section>
-		</main>
-	</body>
-</html>
+import Base from '@/layouts/Base.astro';
+
+const blergPosts = await getCollection("blerg");
+const postTitles = blergPosts.map((post) => ({ title: post.data.title, slug: post.data.slug }));
+
+---
+<Base>
+    <h2>BLerg Posts</h2>
+    <p>Read the posts on our blerg.</p>
+    <ol>
+        {postTitles.map(({ title, slug }) => (
+            <li>
+                <a href={`blerg/${slug}`}>{title}</a>
+            </li>
+        ))}
+    </ol>
+</Base>
