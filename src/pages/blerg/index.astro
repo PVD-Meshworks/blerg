@@ -1,19 +1,22 @@
 ---
 import { getCollection } from "astro:content";
 
-import Base from '@/layouts/Base.astro';
+import Base from "@/layouts/Base.astro";
 
 const blergPosts = await getCollection("blerg");
-const postTitles = blergPosts.map((post) => ({ title: post.data.title, slug: post.data.slug }));
+const postTitles = blergPosts.map((post) => ({
+  title: post.data.title,
+  slug: post.data.slug,
+}));
 ---
 <Base>
-    <h2>BLerg Posts</h2>
-    <p>Read the posts on our blerg.</p>
-    <ol>
-        {postTitles.map(({ title, slug }) => (
-            <li>
-                <a href={`blerg/${slug}`}>{title}</a>
-            </li>
-        ))}
-    </ol>
+  <h2>BLerg Posts</h2>
+  <p>Read the posts on our blerg.</p>
+  <ol>
+    {postTitles.map(({ title, slug }) => (
+      <li>
+        <a href={`blerg/${slug}`}>{title}</a>
+      </li>
+    ))}
+  </ol>
 </Base>
