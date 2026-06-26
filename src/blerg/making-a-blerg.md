@@ -9,6 +9,7 @@ image:
   src: "https://docs.astro.build/assets/rose.webp"
   alt: "testing some alt text"
 ---
+
 Making a co-op is a lot of work. Between writing bylaws, applying for grants,
 and creating a fully fleged mesh network capable of delivering internet
 connectivity to people across the city, there's a lot going on. And while we
