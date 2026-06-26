@@ -12,20 +12,22 @@ const { title, subtitle, color } = Astro.props;
   .container {
     width: fit-content;
     padding: var(--space-px-8);
-
-    border: 3px solid white;
-    border-radius: var(--radius-2);
-    text-align: center;
   }
 
   .swatch {
     aspect-ratio: 1;
-    width: var(--size-px-12);
+    width: var(--size-px-9);
     border-radius: var(--radius-2);
+    margin: 0 auto;
+  }
+
+  .title {
+    padding: var(--size-px-2);
+    margin: 0 auto;
   }
 </style>
 
 <div class="container">
-  <h3>{title}</h3>
   <div class="swatch" style={`background-color:${color};`}></div>
+  <pre class="title">{title}</pre>
 </div>

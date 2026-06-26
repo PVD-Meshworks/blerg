@@ -1,0 +1,22 @@
+---
+interface Props {
+  title: string;
+}
+
+const {title} = Astro.props;
+---
+
+<style>
+.container {
+  display: flex;
+  gap: var(--size-fluid-4);
+  margin-block: var(--size-fluid-8);
+  margin-inline: var(--size-fluid-4);
+}
+</style>
+
+<div class="container">
+  <h2>{title}</h2>
+  <slot />
+  <hr />
+</div>
