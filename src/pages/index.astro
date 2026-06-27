@@ -1,12 +1,61 @@
 ---
 import Base from "@/layouts/Base.astro";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
+
+<style>
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero--title {
+}
+
+.hero__title--text {
+  font-size: 128px;
+  padding: 128px;
+  transform: rotate(-5deg);
+  text-align: center;
+  line-height: 164px;
+  text-decoration: underline red var(--size-px-3);
+}
+
+.hero__title--italic {
+  font-style: italic;
+}
+
+.hero__cta {
+  display: flex;
+  gap: 5px;
+}
+</style>
+
 <Base>
-  <h1>PVD Meshworks</h1>
-  <h2>New astro site</h2>
-  <a href="/">home</a>
-  <a href="/blerg">blerg</a>
+  <main>
+    <h1>Providence Meshworks</h1>
+    <div class="hero">
+      <div class="hero__title">
+        <h1 class="hero__title--text">
+          The Internet <br>
+          <span class="hero__title--italic">belongs</span>
+          <br> to the People
+        </h1>
+      </div>
+      <div class="hero__cta">
+        <button class="hero__cta--primary">Join the Pilot</button>
+        <button class="hero__cta--secondary">Learn more</button>
+      </div>
+    </div>
+  </main>
 </Base>

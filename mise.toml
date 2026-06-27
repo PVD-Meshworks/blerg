@@ -1,0 +1,5 @@
+[tools]
+bat = "latest"
+deno = "latest"
+fd = "latest"
+jj = "latest"
