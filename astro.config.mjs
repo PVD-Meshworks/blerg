@@ -15,5 +15,10 @@ export default defineConfig({
       name: "Sour Gummy",
       cssVariable: "--font-accent",
     },
+    {
+      provider: fontProviders.google(),
+      name: "Comfortaa",
+      cssVariable: "--font-accent-2",
+    },
   ],
 });

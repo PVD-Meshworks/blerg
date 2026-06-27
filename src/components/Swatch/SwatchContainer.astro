@@ -7,16 +7,19 @@ const {title} = Astro.props;
 ---
 
 <style>
-.container {
+h2 {
+  padding-bottom: var(--size-px-4);
+}
+
+.wrapper {
   display: flex;
-  gap: var(--size-fluid-4);
-  margin-block: var(--size-fluid-8);
-  margin-inline: var(--size-fluid-4);
+  flex-wrap: wrap;
 }
 </style>
 
 <div class="container">
   <h2>{title}</h2>
-  <slot />
-  <hr />
+  <div class="wrapper">
+    <slot />
+  </div>
 </div>
