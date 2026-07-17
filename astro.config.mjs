@@ -4,8 +4,7 @@ import { defineConfig, fontProviders } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://pvd-meshworks.github.io/",
-  base: "/blerg",
+  site: "http://pvdmesh.net",
   fonts: [
     {
       provider: fontProviders.google(),
