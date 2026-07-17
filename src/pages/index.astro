@@ -1,106 +1,65 @@
 ---
 import Base from "@/layouts/Base.astro";
+import ContentColumn from "@/layouts/ContentColumn.astro";
+import Bylaws from "@/components/Bylaws/Bylaws.astro";
 ---
 
 <style>
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  margin: 0 auto;
-}
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-.hero--title {
-}
+  .hero--title {}
 
-.hero__title--text {
-  font-size: 128px;
-  padding: 128px;
-  transform: rotate(-5deg);
-  text-align: center;
-  line-height: 164px;
-  text-decoration: underline red var(--size-px-3);
-}
+  .hero__title--text {
+    font-size: 128px;
+    padding: 128px;
+    transform: rotate(-5deg);
+    text-align: center;
+    line-height: 164px;
+    text-decoration: underline red var(--size-px-3);
+  }
 
-.hero__title--italic {
-  font-style: italic;
-}
+  .hero__title--italic {
+    font-style: italic;
+  }
 
-.hero__cta {
-  display: flex;
-  gap: 5px;
-}
+  .hero__cta {
+    display: flex;
+    gap: 5px;
+  }
 </style>
 
 <Base>
-  <main>
+  <ContentColumn>
     <h1>Providence Meshworks</h1>
-    <div class="hero">
-      <div class="hero__title">
-        <h1 class="hero__title--text">
-          The Internet <br>
-          <span class="hero__title--italic">belongs</span>
-          <br> to the People
-        </h1>
+    <section class="full-bleed">
+      <div class="hero">
+        <div class="hero__title">
+          <h1 class="hero__title--text">
+            The Internet <br>
+            <span class="hero__title--italic">belongs</span>
+            <br> to the People
+          </h1>
+        </div>
+        <div class="hero__cta">
+          <button class="hero__cta--primary">Join the Pilot</button>
+          <button class="hero__cta--secondary">Learn more</button>
+        </div>
       </div>
-      <div class="hero__cta">
-        <button class="hero__cta--primary">Join the Pilot</button>
-        <button class="hero__cta--secondary">Learn more</button>
-      </div>
-    </div>
-  </main>
-  <section>
-    <h2>
-      By Laws
-    </h2>
-    <h3>Membership</h3>
-    <h4>Eligibility</h4>
-    <ul>
-      <li>Workers are eligible for membership in the cooperative after a year of active service.</li>
-      <li>Consumers are eligible for membership upon network service contract.</li>
-      <li>Community members eligible for membership must be sponsored by an existing member. Community members are not eligible for votes.</li>
-    </ul>
-    <h3>Shares</h3>
-    <ul>
-      <li>Worker shares cost $100</li>
-      <li>Consumer shares cost $100.</li>
-      <li>Community members shares are free.</li>
-    </ul>
-    <h3>Termination</h3>
-    <ul>
-      <li>Worker owner's membership is terminated with employment</li>
-      <li>Consumer owner's membership is terminated with service contract</li>
-      <li>Community member membership is terminated after 6 months of inactivity</li>
-    </ul>
-    <h3>Member meetings</h3>
-    <ul>
-      <li>All members meet together quarterly</li>
-      <li>Worker members meet monthly</li>
-    </ul>
-    <h3>Board of Directors</h3>
-    <ul>
-      <li>President — Ensures consensus is gathered, makes sure concerns are heard</li>
-      <li>Secretary — Makes sure notes are taken</li>
-      <li>Treasurer — Reviews financial documents</li>
-    </ul>
-    <h3>Financials and Profits</h3>
-    <ul>
-      <li>Surplus can be earmarked for capital expenditure projects by a vote of the general membership</li>
-      <li>Any additional funds are redistributed to workers and consumers</li>
-      <li>Should the cooperative disolve, all hardware will be donated to a cooperative</li>
-    </ul>
-    <h3>Administration</h3>
-    <ul>
-      <li>Amendments require 70% majority, though we strive for consensus</li>
-    </ul>
-  </section>
+    </section>
+    <Bylaws />
+  </ContentColumn>
 </Base>
