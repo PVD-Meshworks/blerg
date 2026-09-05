@@ -1,51 +1,139 @@
 ---
 import Base from "@/layouts/Base.astro";
 import ContentColumn from "@/layouts/ContentColumn.astro";
-import Bylaws from "@/components/Bylaws/Bylaws.astro";
 ---
 
 <style>
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    margin: 0 auto;
+
+.nav__home {
+  font-size: var(--font-size-fluid-3);
+  text-align: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero--title {}
+
+.hero__title--text {
+  font-size: 128px;
+  padding-block: 128px;
+  text-align: center;
+  line-height: 164px;
+  text-decoration: underline var(--red-10) var(--size-px-3);
+  padding-block: var(--size-8);
+  transform: rotate(-5deg);
+}
+
+.hero__title--italic {
+  font-style: italic;
+}
+
+.hero__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-4);
+  margin-block: var(--size-4);
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__btn {
+  font-size: var(--font-size-7);
+  border-radius: var(--radius-2);
+  min-width: 350px;
+  transform: skew(-20deg);
+  text-align: center;
+  cusror: pointer;
+}
+
+.hero__btn--primary {
+  background-color: var(--stone-0);
+  border-color: var(--stone-0);
+  color: var(--stone-12)
+}
+
+.hero__btn--secondary {
+  background-color: var(--stone-12);
+  border-color: var(--stone-0);
+  color: var(--stone-0);
+}
+
+.hero__btn--inner {
+  display: inline-block;
+  transform: skew(20deg);
+  text-decoration: none;
+  color: inherit;
+}
+
+.overview {
+  padding-block: var(--size-10);
+}
+.overview__top {
+  height: var(--size-4);
+  background-image: linear-gradient(to bottom right, var(--stone-12), var(--stone-12) 50%, var(--stone-0) 50%, var(--stone-0));
+}
+
+.overview__inner {
+  background-color: var(--stone-0);
+  color: var(--stone-12);
+  padding-block: var(--size-6);
+  font-size: var(--font-size-fluid-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overview__inner--text {
+  width: 50ch;
+  max-width: var(--size-content-3);
+
+  p {
+    padding-block: var(--size-5);
+  }
+}
+
+.overview__bottom {
+  height: var(--size-4);
+  background-image: linear-gradient(to bottom right, var(--stone-0), var(--stone-0) 50%, var(--stone-12) 50%, var(--stone-12));
+}
+
+.pilot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-fluid-1);
+  padding-block: var(--size-4);
+}
+
+.pilot__inner {
+  width: 50ch;
+  max-width: var(--size-content-3);
+
+  p {
+    padding-block: var(--size-5);
   }
 
-  .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .hero--title {}
-
-  .hero__title--text {
-    font-size: 128px;
-    padding: 128px;
-    transform: rotate(-5deg);
+  h2 {
     text-align: center;
-    line-height: 164px;
-    text-decoration: underline red var(--size-px-3);
+    font-size: var(--font-size-fluid-3);
+    text-decoration: underline var(--red-10) var(--size-px-2);
+    padding-block: var(--size-8);
+    transform: rotate(-3deg);
   }
+}
 
-  .hero__title--italic {
-    font-style: italic;
-  }
-
-  .hero__cta {
-    display: flex;
-    gap: 5px;
-  }
 </style>
 
 <Base>
-  <ContentColumn>
-    <h1>Providence Meshworks</h1>
-    <section class="full-bleed">
+    <nav class="nav">
+      <h1 class="nav__home">Providence Meshworks</h1>
+    </nav>
+    <section>
       <div class="hero">
         <div class="hero__title">
           <h1 class="hero__title--text">
@@ -54,12 +142,48 @@ import Bylaws from "@/components/Bylaws/Bylaws.astro";
             <br> to the People
           </h1>
         </div>
-        <div class="hero__cta">
-          <button class="hero__cta--primary">Join the Pilot</button>
-          <button class="hero__cta--secondary">Learn more</button>
-        </div>
       </div>
     </section>
-    <Bylaws />
-  </ContentColumn>
+    <section class="hero__cta">
+      <button class="hero__btn hero__btn--primary">
+        <a href="#pilot" class="hero__btn--inner">Join the Effort</a>
+      </button>
+      <button class="hero__btn hero__btn--secondary">
+        <a href="#overview" class="hero__btn--inner">Learn More</a>
+      </button>
+    </section>
+    <section id="overview" class="overview">
+      <div class="overview__top"></div>
+      <div class="overview__inner">
+        <div class="overview__inner--text">
+          <h2>What is Providence Meshworks?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+          </p>
+          <h2>What is a mesh network?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+          </p>
+          <h2>What is a solidarity cooperative?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+          </p>
+        </div>
+      </div>
+      <div class="overview__bottom"></div>
+    </section>
+    <section id="pilot" class="pilot">
+      <div class="pilot__inner">
+        <h2>Join the Effort</h2>      
+        <h3>Become a pilot site</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+        </p>
+        <h3>Volunteer with us</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+        </p>
+      </div>
+    </section>
+    <script data-letterbirduser="providence-meshworks" src="https://letterbird.co/embed/v1.js"></script>
 </Base>
