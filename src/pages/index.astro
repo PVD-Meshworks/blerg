@@ -33,6 +33,23 @@ import ContentColumn from "@/layouts/ContentColumn.astro";
   font-style: italic;
 }
 
+@media (max-width: 560px) {
+  .hero__title--text {
+    font-size: var(--size-px-10);
+    line-height: var(--size-px-11);
+    padding-top: var(--size-4);
+  }
+}
+
+@media (max-width: 360px) {
+  .hero__title--text {
+    font-size: var(--size-px-8);
+    line-height: var(--size-px-9);
+    padding-top: var(--size-4);
+  }
+}
+
+
 .hero__cta {
   display: flex;
   flex-wrap: wrap;
@@ -43,9 +60,9 @@ import ContentColumn from "@/layouts/ContentColumn.astro";
 }
 
 .hero__btn {
-  font-size: var(--font-size-7);
+  font-size: var(--font-size-fluid-2);
   border-radius: var(--radius-2);
-  min-width: 350px;
+  min-width: 300px;
   transform: skew(-20deg);
   text-align: center;
   cusror: pointer;
@@ -74,7 +91,7 @@ import ContentColumn from "@/layouts/ContentColumn.astro";
   padding-block: var(--size-10);
 }
 .overview__top {
-  height: var(--size-4);
+  height: var(--size-fluid-6);
   background-image: linear-gradient(to bottom right, var(--stone-12), var(--stone-12) 50%, var(--stone-0) 50%, var(--stone-0));
 }
 
@@ -82,6 +99,7 @@ import ContentColumn from "@/layouts/ContentColumn.astro";
   background-color: var(--stone-0);
   color: var(--stone-12);
   padding-block: var(--size-6);
+  padding-inline: var(--size-fluid-3);
   font-size: var(--font-size-fluid-1);
   display: flex;
   justify-content: center;
@@ -98,7 +116,7 @@ import ContentColumn from "@/layouts/ContentColumn.astro";
 }
 
 .overview__bottom {
-  height: var(--size-4);
+  height: var(--size-fluid-6);
   background-image: linear-gradient(to bottom right, var(--stone-0), var(--stone-0) 50%, var(--stone-12) 50%, var(--stone-12));
 }
 
@@ -113,6 +131,7 @@ import ContentColumn from "@/layouts/ContentColumn.astro";
 .pilot__inner {
   width: 50ch;
   max-width: var(--size-content-3);
+  padding-inline: var(--size-fluid-3);
 
   p {
     padding-block: var(--size-5);
@@ -123,7 +142,6 @@ import ContentColumn from "@/layouts/ContentColumn.astro";
     font-size: var(--font-size-fluid-3);
     text-decoration: underline var(--red-10) var(--size-px-2);
     padding-block: var(--size-8);
-    transform: rotate(-3deg);
   }
 }
 
