@@ -10,6 +10,26 @@ import ContentColumn from "@/layouts/ContentColumn.astro";
   text-align: center;
 }
 
+@media (max-width: 376) {
+  .nav__home {
+    visibility: hidden;
+    position: relative;
+    height: fit-content;
+    /* HACK: This is to fight the two line Providence Meshworks */
+    /*  I'd prefer for this to be overflow hidden or something */
+    height: var(--font-size-fluid-3);
+  }
+
+  .nav__home:after {
+    visibility: visible;
+    content: "PVD Mesh";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -93,6 +113,7 @@ import ContentColumn from "@/layouts/ContentColumn.astro";
 .overview__top {
   height: var(--size-fluid-6);
   background-image: linear-gradient(to bottom right, var(--stone-12), var(--stone-12) 50%, var(--stone-0) 50%, var(--stone-0));
+  margin-bottom: -1px;
 }
 
 .overview__inner {
@@ -118,6 +139,7 @@ import ContentColumn from "@/layouts/ContentColumn.astro";
 .overview__bottom {
   height: var(--size-fluid-6);
   background-image: linear-gradient(to bottom right, var(--stone-0), var(--stone-0) 50%, var(--stone-12) 50%, var(--stone-12));
+  margin-top: -1px;
 }
 
 .pilot {
