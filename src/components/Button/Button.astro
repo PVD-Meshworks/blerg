@@ -1,0 +1,64 @@
+---
+let { type: btnType, size, href } = Astro.props;
+
+size = !size ? "md" : size;
+btnType = !btnType ? "secondary" : btnType;
+---
+
+<style>
+.btn {
+  border-radius: var(--radius-2);
+  text-align: center;
+  transform: skew(-20deg);
+}
+
+.inner {
+  display: inline-block;
+  transform: skew(20deg);
+}
+
+.sm {
+  font-size: var(--font-size-fluid-1);
+  padding-inline: var(--font-size-fluid-1);
+}
+
+.md {
+  font-size: var(--font-size-fluid-2);
+  padding-inline: var(--font-size-fluid-2);
+}
+
+.lg {
+  font-size: var(--font-size-fluid-3);
+  padding-inline: var(--font-size-fluid-3);
+}
+
+.primary {
+  background-color: var(--ac-color);
+  border-color: var(--ac-color);
+  color: var(--fg-color);
+}
+
+.secondary {
+  background-color: var(--fg-color);
+  border-color: var(--fg-color);
+  color: var(--bg-color);
+}
+
+.ghost {
+  background-color: var(--bg-color);
+  border-color: var(--fg-color);
+  color: var(--fg-color);
+}
+
+.no-link {
+  text-decoration: none;  
+  color: inherit;
+}
+</style>
+
+<button class:list={["btn", btnType, size]}>
+  <div class="inner">
+    {href && <a href={href} class="no-link"><slot /></a>}
+    {!href && <slot />}
+  </div>
+</button>

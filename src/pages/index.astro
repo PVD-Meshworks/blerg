@@ -1,6 +1,6 @@
 ---
 import Base from "@/layouts/Base.astro";
-import ContentColumn from "@/layouts/ContentColumn.astro";
+import Button from "@/components/Button/Button.astro";
 ---
 
 <style>
@@ -76,33 +76,6 @@ import ContentColumn from "@/layouts/ContentColumn.astro";
   align-items: center;
 }
 
-.hero__btn {
-  font-size: var(--font-size-fluid-2);
-  border-radius: var(--radius-2);
-  min-width: 300px;
-  transform: skew(-20deg);
-  text-align: center;
-  cusror: pointer;
-}
-
-.hero__btn--primary {
-  background-color: var(--sand-1);
-  border-color: var(--sand-1);
-  color: var(--stone-12)
-}
-
-.hero__btn--secondary {
-  background-color: var(--stone-12);
-  border-color: var(--sand-1);
-  color: var(--sand-1);
-}
-
-.hero__btn--inner {
-  display: inline-block;
-  transform: skew(20deg);
-  text-decoration: none;
-  color: inherit;
-}
 
 .overview {
   padding-block: var(--size-10);
@@ -182,12 +155,12 @@ import ContentColumn from "@/layouts/ContentColumn.astro";
       </div>
     </section>
     <section class="hero__cta">
-      <button class="hero__btn hero__btn--primary">
-        <a href="#pilot" class="hero__btn--inner">Join the Effort</a>
-      </button>
-      <button class="hero__btn hero__btn--secondary">
-        <a href="#overview" class="hero__btn--inner">Learn More</a>
-      </button>
+      <Button type="primary" size="lg" href="#pilot">
+        Join the Effort
+      </Button>
+      <Button type="ghost" size="lg" href="#overview">
+        Learn More
+      </Button>
     </section>
     <section id="overview" class="overview">
       <div class="overview__top"></div>
