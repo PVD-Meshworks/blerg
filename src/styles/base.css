@@ -1,11 +1,35 @@
 :root {
-  --bg-color: var(--stone-12);
-  --fg-color: var(--sand-1);
-  --ac-color: var(--red-10);
+  --brand: var(--red-10);
+  --text-1: var(--sand-1);
+  --text-2: var(--sand-3);
+  --surface-1: var(--stone-12);
+  --surface-2: var(--stone-11);
+  --surface-3: var(--stone-10);
+  --surface-4: var(--stone-9);
+  --surface-shadow: var(--stone-12-hsl);
+  --shadow-strength: 80%;
 }
 
 html {
-  background-color: var(--bg-color);
-  color: var(--fg-color);
+  background-color: var(--surface-1);
+  color: var(--text-1);
   font-family: var(--font-classical-humanist);
+}
+
+h2 {
+  font-size: var(--font-size-fluid-3);
+  text-decoration: underline var(--red-10) var(--size-px-2);
+}
+
+h3 {
+  font-size: var(--font-size-fluid-2);
+}
+
+h4 {
+  font-size: var(--font-size-fluid-1);
+}
+
+p {
+  padding-block: var(--size-5);
+  font-size: var(--font-size-fluid-1);
 }

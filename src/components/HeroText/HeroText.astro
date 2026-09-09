@@ -1,0 +1,38 @@
+---
+---
+
+<style>
+.hero {
+  & h1 {
+    text-align: center;
+    text-decoration: underline var(--red-10) var(--size-px-3);
+    font-size: var(--size-px-11);
+    line-height: var(--size-px-12);
+    padding-block: var(--size-8);
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    & h1 {
+      font-size: var(--size-px-10);
+      line-height: var(--size-px-11);
+      padding-block: var(--size-8);
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .hero {
+    & h1 {
+      font-size: var(--size-px-8);
+      line-height: var(--size-px-9);
+      padding-block: var(--size-8);
+    }
+  } 
+}
+</style>
+
+<div class="hero">
+  <slot />
+</div>

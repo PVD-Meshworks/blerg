@@ -1,0 +1,37 @@
+---
+---
+<style>
+.outer {
+  padding-block: var(--size-10);
+}
+
+.top {
+  height: var(--size-fluid-6);
+  background-image: linear-gradient(to bottom right, var(--stone-12), var(--stone-12) 50%, var(--sand-1) 50%, var(--sand-1));
+  margin-bottom: -1px;
+}
+
+.inner {
+  background-color: var(--sand-1);
+  color: var(--stone-12);
+  padding-block: var(--size-6);
+  padding-inline: var(--size-fluid-3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom {
+  height: var(--size-fluid-6);
+  background-image: linear-gradient(to bottom right, var(--sand-1), var(--sand-1) 50%, var(--stone-12) 50%, var(--stone-12));
+  margin-top: -1px;
+}
+</style>
+
+<div class="outer">
+  <div class="top"></div>
+  <div class="inner">
+    <slot />
+  </div>
+  <div class="bottom"></div>
+</div>

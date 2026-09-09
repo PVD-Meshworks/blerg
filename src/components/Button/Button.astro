@@ -1,8 +1,5 @@
 ---
-let { type: btnType, size, href } = Astro.props;
-
-size = !size ? "md" : size;
-btnType = !btnType ? "secondary" : btnType;
+let { type: btnType = "primary", size = "md", href } = Astro.props;
 ---
 
 <style>
@@ -33,21 +30,21 @@ btnType = !btnType ? "secondary" : btnType;
 }
 
 .primary {
-  background-color: var(--ac-color);
-  border-color: var(--ac-color);
-  color: var(--fg-color);
+  background-color: var(--brand);
+  border-color: var(--brand);
+  color: var(--text-1);
 }
 
 .secondary {
-  background-color: var(--fg-color);
-  border-color: var(--fg-color);
-  color: var(--bg-color);
+  background-color: var(--surface-1);
+  border-color: var(--text-1);
+  color: var(--text-1);
 }
 
 .ghost {
-  background-color: var(--bg-color);
-  border-color: var(--fg-color);
-  color: var(--fg-color);
+  background-color: var(--surface-1);
+  border-color: var(--text-1);
+  color: var(--text-1);
 }
 
 .no-link {
