@@ -4,9 +4,12 @@ let { type: btnType = "primary", size = "md", href } = Astro.props;
 
 <style>
 .btn {
+  border-style: solid;
+  border-width: var(--size-00);
   border-radius: var(--radius-2);
   text-align: center;
   transform: skew(-20deg);
+  transition: background-color 300ms;
 }
 
 .inner {
@@ -35,10 +38,18 @@ let { type: btnType = "primary", size = "md", href } = Astro.props;
   color: var(--text-1);
 }
 
+.primary:hover, .primary:focus {
+  background-color: var(--brand-dark);
+}
+
 .secondary {
   background-color: var(--surface-1);
   border-color: var(--text-1);
   color: var(--text-1);
+}
+
+.secondary:hover, .secondary:focus {
+  background-color: var(--surface-2);
 }
 
 .ghost {
@@ -47,15 +58,27 @@ let { type: btnType = "primary", size = "md", href } = Astro.props;
   color: var(--text-1);
 }
 
+.ghost:hover, .ghost:focus {
+  background-color: var(--surface-2);
+}
+
 .no-link {
   text-decoration: none;  
   color: inherit;
 }
 </style>
 
-<button class:list={["btn", btnType, size]}>
-  <div class="inner">
-    {href && <a href={href} class="no-link"><slot /></a>}
-    {!href && <slot />}
-  </div>
-</button>
+{href ? (
+  <a class:list={["btn", btnType, size]} href={href}>
+    <span class="inner no-link">
+      <slot />
+    </span>
+  </a>
+) : (
+  <button class:list={["btn", btnType, size]}>
+    <div class="inner">
+      <slot />
+    </div>
+  </button>
+)}
+
