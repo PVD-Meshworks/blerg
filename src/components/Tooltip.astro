@@ -1,0 +1,32 @@
+---
+const { key } = Astro.props;
+
+const definitions = {
+  "ISP": "internet service provider",
+} as const;
+
+const anchorName = `--${key}`;
+---
+
+<style>
+.anchor {
+  anchor-name: anchorName;
+}
+
+.element {
+  position: absolute;
+  position-anchor: anchorName;
+  justify-self: anchor-center;
+  align-self: normal;
+}
+
+.element:hover {
+  display: block;
+}
+</style>
+
+<span class="anchor" popovertarget={anchorName}>{key}</span>
+
+<div class="element" id={anchorName}>
+  <p>{definitions[key]}</p>
+</div>
