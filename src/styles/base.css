@@ -20,7 +20,7 @@ html {
 
 h2 {
   font-size: var(--font-size-fluid-3);
-  text-decoration: underline var(--red-10) var(--size-px-2);
+  text-decoration: underline var(--brand) var(--size-px-2);
 }
 
 h3 {

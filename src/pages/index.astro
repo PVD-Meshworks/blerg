@@ -3,32 +3,27 @@ import Base from "@/layouts/Base.astro";
 import Button from "@/components/Button/Button.astro";
 import HeroText from "@/components/HeroText/HeroText.astro";
 import DiagonalSection from "@/components/DiagonalSection.astro";
+import Tooltip from "@/components/Tooltip.astro";
+import DesktopNav from "@/components/DesktopNav.astro";
+import MobileNav from "@/components/MobileNav.astro";
 ---
 
 <style>
-
-.nav__home {
-  font-size: var(--font-size-fluid-3);
-  text-align: center;
+.desktop-only {
+  display: block;
 }
 
-@media (max-width: 376) {
-  .nav__home {
-    visibility: hidden;
-    position: relative;
-    height: fit-content;
-    /* HACK: This is to fight the two line Providence Meshworks */
-    /*  I'd prefer for this to be overflow hidden or something */
-    height: var(--font-size-fluid-3);
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .desktop-only {
+    display: none;
   }
 
-  .nav__home:after {
-    visibility: visible;
-    content: "PVD Mesh";
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
+  .mobile-only {
+    display: block;
   }
 }
 
@@ -81,9 +76,12 @@ import DiagonalSection from "@/components/DiagonalSection.astro";
 </style>
 
 <Base>
-    <nav class="nav">
-      <h1 class="nav__home">Providence Meshworks</h1>
-    </nav>
+    <div class="desktop-only">
+      <DesktopNav />
+    </div>
+    <div class="mobile-only">
+      <MobileNav />
+    </div>
     <section class="hero">
       <HeroText>
         <h1>
@@ -158,6 +156,10 @@ import DiagonalSection from "@/components/DiagonalSection.astro";
           <li>
             <h4>Project management</h4>
             <p>Keep us on track to reach our goals!</p>
+          </li>
+          <li>
+            <h4>Translation/Internationalization/Localization</h4>
+            <p>Speak another language? We could use help translating our services.</p>
           </li>
           <li>
             <h4>Some other skill we didn't think about?</h4>
